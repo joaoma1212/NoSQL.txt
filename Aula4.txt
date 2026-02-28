@@ -1,0 +1,87 @@
+Nivel 1
+db.compras.InsertOne(
+	{
+		nr_compra: 1,
+		data: "05/01/2000",
+		cod_cli: 1,
+		cliente: "Jose da Silva",
+		tipo_pes: "F",
+		email: "jose@gmail",
+		telefone: "(11) 3311-000",
+		cod_prod: 1,
+		descricao: "Arroz",
+		preco: 10.25,
+		cod_form: 1,
+		razao: "Arroz Ajato"
+	}
+)
+
+Nivel 2
+
+db.Compras.insertOne(
+	{
+		
+		Nr_Compra: 1,
+		Data: '01/05/2000',
+		
+		dados: {
+			cod_cli: 1,
+			Cliente: 'jose da silva',
+			tip_Pes: 'F'
+		},
+		
+			contato: {
+			Email: 'jose@gmail.com',
+			Telefone: '(11)3311-0000'
+		},
+		
+		produto: {
+			Cod_Prod: 1,
+			Desc_Prod: 'Arroz',
+			Preço: 10.25
+			
+		},
+		
+		fornecedor: {
+		 CodForn: 1,
+		 Razao: 'Arroz Ajato'
+		},
+	}
+)
+
+Nivel 3 
+
+db.Compras.insertOne(
+	{
+		
+		Nr_Compra: 1,
+		Data: '01/05/2000',
+		
+		cliente: {
+			dados: {
+				cod_cli: 1,
+				Cliente: 'jose da silva',
+				tip_Pes: 'F'
+			},
+			
+				contato: {
+				Email: 'jose@gmail.com',
+				Telefone: '(11)3311-0000'
+			}
+		},
+		
+		itemDaCompra: {
+			produto: {
+				Cod_Prod: 1,
+				Desc_Prod: 'Arroz',
+				Preço: 10.25
+				
+			},
+			
+			fornecedor: {
+			 CodForn: 1,
+			 Razao: 'Arroz Ajato'
+			}
+		},
+	}
+)
