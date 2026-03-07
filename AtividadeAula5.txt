@@ -1,0 +1,30 @@
+db.concessionaria.InsertOne(
+	
+	pedido: 1,
+	data: 5/1/2020,	
+
+	cliente: {
+	cod_cli: 1,
+	cliente: 'Jose da Silva',
+	tipo_pes: 'F',
+},
+	
+	contato: {
+		email: 'jose@gmail.com',
+		telefone: (11)
+},
+
+	pedido: [{desc_produto:'Bugatti Veyron ‘Golden’',
+		ano: 2018,
+		valor_usd: 2700000,
+		acessorios_gratuito: ['tapete', 'pintura metalica']}
+		{desc_produto:'Bugatti Veyron ‘Golden’',
+		ano: 2018,
+		valor_usd: 2700000,
+		acessorios_gratuito: ['tapete', 'pintura metalica']}
+],
+
+
+},
+
+)
