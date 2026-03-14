@@ -1,0 +1,23 @@
+use exemplo
+
+db.funcionario.insertMany (
+[ {_id: 1, nome:"Jose", sexo:"M", idade: 25, salario: 1500.23, depto: 1},
+{_id: 2, nome:"Ana", sexo:"F", idade: 42, salario: 1827.43, depto: 5},
+{_id: 3, nome:"Joao", sexo:"M", idade: 33, salario: 4500.23, depto: 3},
+{_id: 4, nome:"Maria", sexo:"F", idade: 22, salario: 2500.55, depto: 3},
+{_id: 5, nome:"Vera", sexo:"F", idade: 38, salario: 3600.88, depto: 2},
+{_id: 6, nome:"Paulo", sexo:"M", idade: 33, salario: 2700.23, depto: 1},
+{_id: 7, nome:"Francisca", sexo:"F", idade: 39, salario: 2901.26, depto: 4},
+{_id: 8, nome:"Pedro", sexo:"M", idade: 18, salario: 2000.88, depto: 2},
+{_id: 9, nome:"Ricardo", sexo:"M", idade: 36, salario: 1400.76, depto: 3},
+{_id: 10, nome:"Antonia", sexo:"F", idade: 55, salario: 1300.45, depto: 6},
+{_id: 11, nome:"Fernanda", sexo:"F", idade: 23, salario: 1900.34, depto: 1}
+])
+
+Consutar
+db.funcionario.find({_id: 1}) / db.tabela.find({linha}, {coluna})
+
+Atualizar / criar 
+db.funcionario.updateOne({_id: 1}, {$set:{depto: 3}}, {upsert:false}) / db.tabela.find({chave}, {$set:{atualizarValor}}, /Opicional\ upsert{true ou false})
+upsert: cria o valor de $set na tabela caso não exista                / db.tabela.updateMany(atualiza varios valores)
+
